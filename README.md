@@ -3,7 +3,13 @@
 
 This is a project I made for the freeCodeCamp curriculum where the camper was asked to build a Markdown Previewer using React.
 
-This project makes use of the library [Marked.js](https://marked.js.org/) to parse the Markdown code.
+The project makes use of the library [Marked.js](https://marked.js.org/) to parse the Markdown code.
+
+#### Screenshot
+
+This is how it looks like.
+
+![Screenshot](Screenshot.png "Screenshot")
 
 #### User Stories
 
