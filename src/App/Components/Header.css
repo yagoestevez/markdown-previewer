@@ -1,8 +1,13 @@
 #header {
-  background      : #222;
-  padding         : 1rem;
+  padding         : 1rem 2rem;
   color           : #fafafa;
   display         : flex;
-  justify-content : space-between;
+  justify-content : center;
   align-items     : center;
+  height          : 10%;
+}
+
+#title {
+  font-size       : 1.2rem;
+  text-transform  : uppercase; 
 }

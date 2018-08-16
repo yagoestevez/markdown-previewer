@@ -1,12 +1,12 @@
 import React from 'react';
+import Logo  from '../Assets/logo.png';
 import './Header.css';
 
 const Header = props => {
 
   return (
     <header id="header">
-      <h1 className="title">Markdown Previewer</h1>
-      <p>menu</p>
+      <img src={Logo} alt="Logo" />
     </header>
   );
 
