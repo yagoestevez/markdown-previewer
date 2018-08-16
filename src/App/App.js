@@ -3,6 +3,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import marked from 'marked';
 import './App.css';
+import './MDStyles.css';
 
 class App extends React.Component {
 
