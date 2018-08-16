@@ -11,7 +11,8 @@ class App extends React.Component {
     super( props );
     
     this.state = {
-      markdown : ''
+      markdown : '',
+      showMenu : false
     };
   }
 
@@ -21,16 +22,27 @@ class App extends React.Component {
     } );
   }
 
+  showPreview = ( ) => {
+    this.setState( ( state ) => {
+      return { showMenu: !state.showMenu }
+    } );
+  }
+
   render() {
     return (
       <React.Fragment>
         <Header />
         <section id="writing-area">
-          <div className="container">
-            <div className="menu">MARKDOWN</div>
-            <textarea id="editor" value={this.state.markdown} onChange={this.handleTextArea} />
+          <div className="editor-container">
+            <div className="menu">
+              MARKDOWN
+              <a onClick={ this.showPreview } href="#/">
+                <i id="show-preview" className={ this.state.showMenu ? 'fas fa-eye-slash' : 'far fa-eye' }></i>
+              </a>
+            </div>
+            <textarea id="editor" value={ this.state.markdown } onChange={ this.handleTextArea } />
           </div>
-          <div className="container">
+          <div className={ this.state.showMenu ? 'preview-container show' : 'preview-container' }>
             <div className="menu preview">PREVIEW</div>
             <div
               id="preview"
